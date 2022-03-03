@@ -1,16 +1,62 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body{
+    font-family: 'Red Hat Display', sans-serif;
+    color: #081158;
+    font-size: 14px;
+    line-height: 1.6em;
+} */
+.after::after{
+    content: '';
+    width: 50%;
+    height: 50%;
+    z-index: -1;
+    position: absolute;
+    left: 25%;
+    top: 2%;
+    transform: scale(1.5);
+    border-radius: 100%;
+    background: radial-gradient(#0606061f, #fefefe);
+    filter: blur(25px);
+}
+.scale:hover img{
+    transform: scale(1.1);
+    
+}
+.scale img{
+    transition: 300ms;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.animate{
+
+    animation: moveInUp 500ms ease-in-out forwards;
+}
+.animate-delay-200{
+
+    animation: moveInUp 500ms ease-in-out 200ms backwards;
+    backface-visibility: hidden;
+}
+.animate-rotate{
+    animation: rotateIn 700ms ease-in-out backwards;
 }
 
-* {
-  box-sizing: border-box;
+@keyframes moveInUp {
+ 0%{
+     transform: translateY(20px);
+     opacity: 0;
+ }   
+ 100%{
+
+ }
+}
+@keyframes rotateIn {
+ 0%{
+     transform: rotate(5deg) scale(1.1);
+     opacity: 0;
+ }   
+ 100%{
+
+ }
 }
