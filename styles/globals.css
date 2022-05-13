@@ -2,13 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
-/* body{
-    font-family: 'Red Hat Display', sans-serif;
-    color: #081158;
-    font-size: 14px;
-    line-height: 1.6em;
-} */
-.after::after{
+@layer components {
+    .btn-blue {
+      @apply bg-[#081158] text-white cursor-pointer  hover:bg-blue-900  px-4 py-4 w-[220px] rounded flex items-center justify-center;
+    }
+    .footer-icon {
+        @apply flex justify-center items-center w-8 h-8 bg-white rounded-full text-sm text-gray-700 duration-300;
+      }
+      .flex-center{
+          @apply flex justify-center items-center
+      }
+      .meal-input{
+          @apply md:px-6 my-4 flex-grow px-3 py-2 md:py-6 rounded mx-2
+      }
+  }
+.after::after {
     content: '';
     width: 50%;
     height: 50%;
@@ -21,42 +29,50 @@
     background: radial-gradient(#0606061f, #fefefe);
     filter: blur(25px);
 }
-.scale:hover img{
+
+.scale:hover img {
     transform: scale(1.1);
-    
+
 }
-.scale img{
+
+.scale img {
     transition: 300ms;
 }
 
-.animate{
+.animate {
 
     animation: moveInUp 500ms ease-in-out forwards;
 }
-.animate-delay-200{
+
+.animate-delay-200 {
 
     animation: moveInUp 500ms ease-in-out 200ms backwards;
     backface-visibility: hidden;
 }
-.animate-rotate{
+
+.animate-rotate {
     animation: rotateIn 700ms ease-in-out backwards;
 }
 
 @keyframes moveInUp {
- 0%{
-     transform: translateY(20px);
-     opacity: 0;
- }   
- 100%{
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
 
- }
+    100% {}
 }
-@keyframes rotateIn {
- 0%{
-     transform: rotate(5deg) scale(1.1);
-     opacity: 0;
- }   
- 100%{
 
- }
+@keyframes rotateIn {
+    0% {
+        transform: rotate(5deg) scale(1.1);
+        opacity: 0;
+    }
+
+    100% {}
+}
+
+.svg-pattern {
+    background-color: #081158;
+    background-image: url("data:image/svg+xml,%3Csvg width='12' height='24' viewBox='0 0 12 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%235d0be0' fill-opacity='0.4'%3E%3Cpath d='M2 0h2v12H2V0zm1 20c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM9 8c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zm-1 4h2v12H8V12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }

@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily:{
-        marker:"'Permanent Marker', cursive"
+        marker:"'Permanent Marker', cursive",
+        odia:"'Anek Odia', sans-serif"
       }
     },
   },
