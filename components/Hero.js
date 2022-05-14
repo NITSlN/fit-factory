@@ -20,7 +20,7 @@ function Hero() {
         </Parallax>
       </div>
       <div className="lg:w-1/2 animate-delay-200 w-full pt-12 lg:pt-0 justify-self-end flex flex-col justify-center text-[#081158] text-blue-900">
-        <h1 className="text-left  text-lg mb-8">HI I'M SANDRA LYONS</h1>
+        <h1 className="text-left  text-lg mb-8">HI I&apos;M SANDRA LYONS</h1>
         <h1 className="md:text-7xl text-xl mb-12 text-[#081158] font-medium md:leading-[4.8rem]">
           Your go to online fitness trainer and nutritionist.
         </h1>

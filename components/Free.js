@@ -18,7 +18,7 @@ function Free() {
           VIEW ALL
         </button>
       </div>
-        <div class="grid md:grid-cols-3 gap-12 mt-24 px-8">
+        <div className="grid md:grid-cols-3 gap-12 mt-24 px-8">
           <Card time={'30 mins'} heading={'The Perfect Outdoor Workout'} src={'https://assets.website-files.com/5e8303dd097a90ffd20e6b2f/5e8314f167d71f19f7a0189f_logan-weaver-RBbwGEKBbD8-unsplash-p-500.jpeg'}/>
           <Card time={'1 hr'} heading={'Back Day'} src={'https://assets.website-files.com/5e8303dd097a90ffd20e6b2f/5e831e3a9e9cc3b8eccc7caf_angelos-michalopoulos-S3Rs0DcvvK0-unsplash-p-500.jpeg'}/>
           <Card time={'40 mins'}  heading={'The Ultimate Abs Tabata'} src={'https://assets.website-files.com/5e8303dd097a90ffd20e6b2f/5e831e7a9a30c575281c9d8d_logan-weaver-BvXh8e5M8YM-unsplash-p-800.jpeg'}/>

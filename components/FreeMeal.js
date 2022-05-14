@@ -27,27 +27,24 @@ function FreeMeal() {
             </div>
             <div className="flex-center">
               <div className=" flex text-xl flex-col w-1/2">
+                {/* Input Field */}
                 <div className="flex md:flex-row w-full">
                   <input
                     type="text"
                     className="meal-input"
-                    name="Full-Name-2"
-                    data-name="Full Name 2"
+                    name="Full-Name"
                     placeholder="Full Name"
-                    id="Full-Name-2"
-                    required=""
+                    id="Full-Name"
                   />
                   <input
                     type="email"
                     className="meal-input"
-                    maxlength="256"
-                    name="email-2"
-                    data-name="Email 2"
+                    name='Email'
                     placeholder="Email"
-                    id="email-2"
-                    required=""
+                    id="email"
                   />
                 </div>
+                {/* Button Sign Up */}
                 <div className="w-full">
                   <button className="btn-blue w-full md:px-0 md:py-6 py-4 mx-2">
                     <MdKeyboardArrowRight className="mr-2 scale-150" /> Sign Up

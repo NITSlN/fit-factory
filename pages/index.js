@@ -18,7 +18,7 @@ export default function Home() {
 
       <Free />
       <Parallax />
-      <FreeMeal />
+      {/* <FreeMeal /> */}
       <Footer />
     </div>
   )
