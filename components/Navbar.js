@@ -72,7 +72,7 @@ function Navbar() {
           </a>
         </div>
         <div
-          className={`fixed right-0 flex-col top-0 h-[100vh] duration-[0.7s] ease-in-out ${
+          className={`fixed md:hidden right-0 flex-col top-0 h-[100vh] duration-[0.7s] ease-in-out ${
             sideNav ? '' : 'translate-x-[100%]'
           } flex items-center py-24 px-12 bg-[#cfddee] w-full sm:w-1/2`}
         >
